@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #d5ebff; /* สีพื้นหลัง */
+  color: #333; /* สีข้อความ */
+  margin: 0;
+  padding: 0;
+}
+
+#user-account-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+#user-account-page h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Welcome message */
+#username-display {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Order History */
+#order-history {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#order-history h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#order-history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#order-history-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#order-history-list li:last-child {
+  border-bottom: none;
+}
+
+#clear-order-history {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#clear-order-history:hover {
+  opacity: 0.8;
+}
+
+/* Edit Profile Section */
+#edit-profile {
+  margin-top: 40px;
+}
+
+#edit-profile h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+#edit-profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#edit-profile-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#edit-profile-form input,
+#edit-profile-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#edit-profile-form input:focus,
+#edit-profile-form textarea:focus {
+  border-color:#007bff;
+  outline: none;
+}
+
+#edit-profile-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+#edit-profile-form button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  #user-account-page {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #edit-profile-form {
+    margin-top: 10px;
+  }
+
+  #edit-profile-form input,
+  #edit-profile-form textarea {
+    padding: 8px;
+  }
+
+  #edit-profile-form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Resize header for small screens */
+  #user-account-page h1 {
+    font-size: 20px;
+  }
+
+  #order-history h2 {
+    font-size: 16px;
+  }
+
+  #clear-order-history {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  #edit-profile h2 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,270 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#d5ebff;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Checkout Page Styling */
+#checkout-page {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e8f8f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-page h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#checkout-page form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#checkout-page form input,
+#checkout-page form textarea {
+  width: 100%;
+  padding: 10px;  /* ลดขนาด padding ให้เล็กลง */
+  margin: 8px 0;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#checkout-page form input:focus,
+#checkout-page form textarea:focus {
+  border-color:#007bff;
+  outline: none;
+}
+
+#checkout-page button {
+  background-color:#007bff;
+  color: white;
+  padding: 10px 20px;  /* ลดขนาด padding ปุ่ม */
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+#checkout-page button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+/* Order Summary Section */
+#order-summary {
+  background-color: #f7dc6f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order-summary h3 {
+  color: #af601a;
+  margin-bottom: 10px;
+}
+
+#order-summary p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+/* Radio Button Styling */
+#checkout-page input[type="radio"] {
+  margin-right: 10px;
+}
+
+#checkout-page label {
+  display: block;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  #checkout-page {
+    padding: 15px;
+  }
+
+  #checkout-page h1 {
+    font-size: 20px;
+  }
+
+  #checkout-page form label,
+  #checkout-page form input,
+  #checkout-page form textarea {
+    font-size: 14px;
+  }
+
+  #checkout-page button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  #order-summary h3 {
+    font-size: 18px;
+  }
+
+  #order-summary p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  #checkout-page {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  #checkout-page h1 {
+    font-size: 18px;
+  }
+
+  #checkout-page form input,
+  #checkout-page form textarea {
+    padding: 10px;
+  }
+
+  #checkout-page button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #order-summary {
+    padding: 12px;
+  }
+
+  #order-summary h3 {
+    font-size: 16px;
+  }
+
+  #order-summary p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  /* Checkout Page Styling */
+#checkout-page {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e8f8f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-page h1 {
+  text-align: center;
+  color: #117a65;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#checkout-page form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#checkout-page form input,
+#checkout-page form textarea {
+  width: 80%;  /* ปรับความยาวช่องกรอกข้อความให้สั้นลง */
+  max-width: 500px; /* จำกัดความกว้างสูงสุดของช่องกรอก */
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#checkout-page form input:focus,
+#checkout-page form textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+#checkout-page button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+#checkout-page button:hover {
+  background-color: #45a049;
+  transform: scale(1.02);
+}
+
+/* Order Summary Section */
+#order-summary {
+  background-color: #f7dc6f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order-summary h3 {
+  color: #af601a;
+  margin-bottom: 10px;
+}
+
+#order-summary p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+}

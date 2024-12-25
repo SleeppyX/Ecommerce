@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuty Store</title>
+  <link rel="stylesheet" href="../Public/Styles/checkstyle.css">
+  <link rel="icon" href="Favicon/favicon.ico">
+</head>
+<body>
+
+  <!-- Checkout Page -->
+  <div id="checkout-page">
+    <h1>รายละเอียดสินค้า</h1>
+
+    <!-- Shipping Address Form -->
+    <form id="shipping-form">
+      <h2>ที่อยู่จัดส่ง</h2>
+      <label for="name">ชื่อ:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+
+      <label for="address">ที่อยู่:</label>
+      <textarea id="address" placeholder="Enter your address" required></textarea><br>
+
+      <label for="city">จังหวัด:</label>
+      <input type="text" id="city" placeholder="Enter your city" required><br>
+
+      <label for="postal-code">เบอร์โทรศัพท์:</label>
+      <input type="text" id="postal-code" placeholder="Enter your postal code" required><br>
+
+      <label for="country">ประเทศ:</label>
+      <input type="text" id="country" placeholder="Enter your country" required><br>
+    </form>
+
+    <!-- Payment Method Selection -->
+    <h2>ชำระเงิน</h2>
+    <label><input type="radio" name="payment-method" value="บัตรเครดิต"> บัตรเครดิต</label><br>
+    <label><input type="radio" name="payment-method" value="เพย์พอล"> เพย์พอล</label><br>
+    <label><input type="radio" name="payment-method" value="เก็บเงินปลายทาง"> เก็บเงินปลายทาง</label><br>
+
+    <!-- Order Summary -->
+    <div id="order-summary">
+      <h3>ผลสรุปรายการสินค้า</h3>
+      <ul id="order-items">
+        <!-- List of items will be dynamically added here -->
+      </ul>
+      <p>ทั้งหมด: $<span id="order-total">0.00</span></p>
+    </div>
+
+    <button type="button" onclick="submitCheckout()">ชำระเงิน</button>
+    <a href="useraccout.html"><h1>บัญชีของฉัน</h1></a>
+  </div>
+  <script src="../src/checkout.js"></script>
+</body>
+</html>

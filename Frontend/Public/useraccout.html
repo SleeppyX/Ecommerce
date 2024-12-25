@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuty Store</title>
+  <link rel="stylesheet" href="../Public/Styles/useraccoutstyles.css">
+  <link rel="icon" href="Favicon/favicon.ico">
+</head>
+<body>
+
+  <!-- User Account Page -->
+  <div id="user-account-page">
+    <h1>บัญชีของฉัน</h1>
+
+    <!-- Display Username -->
+    <p>ยินดีต้อนรับ <span id="username-display">แขก</span></p>
+
+    <!-- View Order History -->
+    <div id="order-history">
+      <h2>ประวัติการสั่งซื้อ</h2>
+      <ul id="order-history-list">
+        <!-- Past orders will be dynamically added here -->
+      </ul>
+      <button id="clear-order-history" onclick="clearOrderHistory()">ลบประวัติการสั่งซื้อ</button>
+    </div>
+
+    <!-- Edit Profile -->
+    <div id="edit-profile">
+      <h2>แก้ไขโปรไฟล์</h2>
+      <form id="edit-profile-form">
+        <label for="username">ชื่อผู้ใช้:</label>
+        <input type="text" id="username" placeholder="ป้อนชื่อของคุณ" required><br>
+
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ" required><br>
+
+        <label for="phone">เบอร์โทรศัพท์:</label>
+        <input type="text" id="phone" placeholder="ป้อนเบอร์โทรศัพท์" required><br>
+
+        <label for="address">ที่อยู่:</label>
+        <textarea id="profile-address" placeholder="ป้อนที่อยู่จัดส่ง" required></textarea><br>
+
+        <button type="submit">บันทึกข้อมูล</button>
+        <a href="shop.html"><h1>Tuty Store</h1></a>
+      </form>
+    </div>
+  </div>
+
+  <script src="../src/user-account.js"></script>
+</body>
+</html>

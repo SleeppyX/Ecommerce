@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="../Styles/products-manage.css">
+  <link rel="icon" href="../Favicon/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Product Management</h1>
+    <nav>
+      <a href="../Pages/index.html">Home</a>
+      <a href="../Pages/users-manage.html">User Management</a>
+      <a href="../Pages/products-manage.html">Product Management</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Add New Product</h2>
+      <form id="product-form" onsubmit="addProduct(event)">
+        <label for="id">Product ID:</label>
+        <input type="number" id="id" name="id" required>
+
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="specialFeatures">Special Features:</label>
+        <textarea id="specialFeatures" name="specialFeatures"></textarea>
+
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size">
+
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color">
+
+        
+
+        <label for="stock">Stock Quantity:</label>
+        <input type="number" id="stock" name="stock" required>
+
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Product List</h2>
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Stock</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Products will be dynamically loaded here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../Script/products-manage.js"></script>
+</body>
+</html>

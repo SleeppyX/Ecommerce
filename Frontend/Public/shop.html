@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuty Store</title>
+  <link rel="stylesheet" href="../Public/Styles/liststyles.css">
+  <link rel="icon" href="Favicon/favicon.ico">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="Logo-goback">Tuty Store</a>
+    <div class="nav-right">
+      <div id="cart-icon-container">
+        <a href="cartsection.html" id="cart-icon">🛒</a>
+        <span id="cart-count">0</span>
+      </div>
+      <a href="shop.html" class="useraccount">ร้านค้า</a>
+      <a href="useraccout.html" class="useraccount">ผู้ใช้งาน</a>
+      <a href="login.html" class="useraccount">ล็อกอิน</a>
+    </div>
+  </nav>
+
+  <!-- Filters -->
+  <div class="filters">
+    <input type="text" id="search-bar" placeholder="ค้นหาสินค้า...">
+    <select id="category-filter">
+      <option value="">เลือกหมวดหมู่</option>
+      <option value="AirConditioner">แอร์</option>
+      <option value="Fan">พัดลม</option>
+      <option value="AirPurifier">เครื่องฟอกอากาศ</option>
+    </select>
+    <input type="number" id="min-price" placeholder="ราคาต่ำสุด">
+    <input type="number" id="max-price" placeholder="ราคาสูงสุด">
+  </div>
+
+  <section class="container">
+    <div class="slider-wrapper">
+    <div class="slider">
+    <img id="slide-1" src="Images/WallpaperSlide1.png"  >
+    <img id="slide-2" src="Images/WallpaperSlide2.png"  >
+    <img id="slide-3" src="Images/WallpaperSlide3.png"  >
+    </div>
+    <div class="slider-nav">
+        <a href="#slide-1" class="slider-link"></a>
+        <a href="#slide-2" class="slider-link"></a>
+        <a href="#slide-3" class="slider-link"></a>
+    </div>
+    
+    </div>
+    </section>
+
+  <!-- Cart Section -->
+  <div id="cart">
+    <h2>รายการสินค้าที่อยู่ในตะกร้า</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0.00</span></p>
+  </div>
+
+  <!-- Product List -->
+  <div class="product-list" id="product-list">
+    <!-- สินค้าจะถูกโหลดจาก API -->
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <h2>&copy; Tuty Studio. All rights reserved.</h2>
+    <p>Collaboration By Meecare and Noname group.</p>
+  </footer>
+
+  <script src="../src/listscript.js" type="module"></script>
+</body>
+
+</html>

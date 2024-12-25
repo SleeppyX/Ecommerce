@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color:#d5ebff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* จัดให้อยู่กลางแนวนอน */
+  justify-content: center;  /* จัดให้อยู่กลางแนวตั้ง */
+  min-height: 100vh;  /* ทำให้สูงสุดของหน้าเต็มที่ */
+  text-align: center;  /* ให้ข้อความอยู่กลาง */
+}
+
+/* กำหนดขนาดของส่วนหัว */
+h1 {
+  margin-top: 20px;
+  color: #444;
+  font-size: 2em;
+}
+
+/* สไตล์ของตะกร้า */
+#cart-count {
+  font-weight: bold;
+  color: #ff6347;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#cart-items li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-items li span {
+  margin-right: 10px;
+}
+
+.quantity-controls {
+  display: flex;
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+  justify-content: center; /* จัดตำแหน่งปุ่มให้อยู่กลาง */
+  align-items: center; /* จัดตำแหน่งปุ่มในแนวตั้ง */
+}
+
+.quantity-btn {
+  background-color: #ff6347; /* สีพื้นหลังของปุ่ม */
+  color: #fff; /* สีตัวหนังสือ */
+  border: 2px solid #ff6347; /* ขอบปุ่มสีเดียวกับพื้นหลัง */
+  padding: 8px 12px; /* ขนาดปุ่ม */
+  border-radius: 5px; /* มุมโค้งของปุ่ม */
+  font-size: 1.2em; /* ขนาดตัวอักษรในปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+  transition: all 0.3s ease; /* การเปลี่ยนแปลงแบบค่อยเป็นค่อยไป */
+}
+
+.quantity-btn:hover {
+  background-color: #ff4500; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+  border-color: #ff4500; /* เปลี่ยนสีขอบเมื่อ hover */
+}
+
+.quantity-btn:active {
+  transform: scale(0.95); /* ลดขนาดของปุ่มเมื่อคลิก */
+}
+
+#cart-items li button {
+  background-color: #ff6347; /* สีพื้นหลังของปุ่ม */
+  color: #fff; /* สีของตัวหนังสือ */
+  border: 2px solid #ff6347; /* ขอบปุ่มสีเดียวกับพื้นหลัง */
+  padding: 8px 15px; /* ขนาดของปุ่ม */
+  border-radius: 25px; /* มุมโค้งของปุ่ม */
+  font-size: 1em; /* ขนาดตัวอักษรในปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+  text-transform: uppercase; /* ตัวอักษรในปุ่มให้เป็นตัวพิมพ์ใหญ่ */
+  transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบค่อยเป็นค่อยไป */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาของปุ่ม */
+}
+
+#cart-items li button:hover {
+  background-color: #ff4500; /* สีพื้นหลังเมื่อ hover */
+  border-color: #ff4500; /* เปลี่ยนสีขอบเมื่อ hover */
+  transform: scale(1.1); /* ขยายปุ่มเล็กน้อยเมื่อ hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้เด่นขึ้น */
+}
+
+#cart-items li button:active {
+  transform: scale(0.98); /* ลดขนาดของปุ่มเมื่อคลิก */
+}
+
+
+/* สไตล์สำหรับยอดรวม */
+#total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+}
+
+#total-price {
+  color:#007bff;
+}
+
+/* ลิงก์กลับไปเลือกสินค้า */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* สไตล์ของหน้า */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5em; /* ลดขนาดตัวหนังสือหัวข้อ */
+  }
+
+  #cart-items li {
+    flex-direction: column; /* เปลี่ยนแนวการจัดเรียงเป็นแนวตั้ง */
+    text-align: left; /* ทำให้ข้อความจัดเรียงทางซ้าย */
+  }
+
+  #cart-items li button {
+    width: 100%; /* ปรับให้ปุ่มกว้างเต็มที่ */
+  }
+
+  a {
+    width: 180px; /* ปรับความกว้างของลิงก์ */
+  }
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* เพิ่ม padding รอบๆ หน้า */
+  }
+
+  h1 {
+    font-size: 1.3em; /* ลดขนาดหัวข้อ */
+  }
+
+  #cart-items {
+    max-width: 100%; /* ให้ตะกร้าแสดงเต็มความกว้าง */
+  }
+
+  #cart-items li {
+    flex-direction: column; /* เปลี่ยนการจัดเรียงเป็นแนวตั้ง */
+    padding: 8px;
+  }
+
+  #cart-items li button {
+    width: 100%; /* ปรับปุ่มให้กว้างเต็ม */
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 1em; /* ลดขนาดตัวหนังสือสำหรับข้อความ */
+  }
+
+  a {
+    width: 160px; /* ปรับความกว้างของลิงก์ */
+  }
+}
+
+/* Media Queries สำหรับหน้าจอมือถือขนาดเล็ก (หน้าจอแคบ) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.1em; /* ลดขนาดหัวข้อให้เล็กลง */
+  }
+
+  #cart-items li {
+    padding: 6px; /* ลด padding ของรายการ */
+  }
+
+  #cart-items li button {
+    padding: 5px; /* ลดขนาดปุ่ม */
+  }
+
+  a {
+    width: 140px; /* ปรับความกว้างของลิงก์ */
+  }
+
+  p {
+    font-size: 0.9em; /* ลดขนาดตัวอักษร */
+  }
+}
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #ff1a1a;
+}

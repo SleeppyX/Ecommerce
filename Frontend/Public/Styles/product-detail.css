@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+
+body {
+  font-family: "Anuphan", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d5ebff;
+}
+
+/* Header styles */
+nav {
+  height: 50px;
+  background-color: #4d9aff;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.colour {
+  background-color: #d5ebff;
+  color: #d5ebff;
+
+}
+
+.Logo-goback {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.useraccout {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-right {
+  display: flex;
+  float: right;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#product-detail {
+  padding: 20px;
+  
+}
+
+#product-detail .product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  flex: 1.5;
+  justify-content: space-between;
+  background: #fff;
+  padding-bottom: 15vh;
+  border-radius: 10px;
+}
+
+#product-detail h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#product-detail p {
+  font-weight: bold;
+  font-size: 16px;  
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#product-detail .product-container .D1 {
+  margin-top: 15vh;
+  justify-items: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  img{
+    max-width: 100%;
+    height: 300px;
+  }
+
+}
+
+#product-detail .product-container .D2{
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  line-height: 3;
+  padding-right: 10px;
+}
+
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: none;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart-btn:focus {
+  outline: none;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  #product-detail h2 {
+    font-size: 28px;
+  }
+
+  #product-detail p {
+    font-size: 14px;
+  }
+
+  #product-detail #product-price {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 14px;
+  }
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็กมาก (มือถือ) */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header a {
+    font-size: 14px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  #product-detail h2 {
+    font-size: 24px;
+  }
+
+  #product-detail p {
+    font-size: 12px;
+  }
+
+  #product-detail #product-price {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 12px;
+  }
+}
+
+/* Media Queries สำหรับหน้าจอมือถือขนาดเล็ก */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header a {
+    font-size: 12px;
+  }
+
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  #product-detail h2 {
+    font-size: 18px;
+  }
+
+  #product-detail p {
+    font-size: 10px;
+  }
+
+  #product-detail #product-price {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 10px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #4d9aff;
+  /* Dark footer background */
+  color: white;
+  margin-top: auto;
+}

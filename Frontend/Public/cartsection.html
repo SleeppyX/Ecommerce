@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuty Store</title>
+  <link rel="stylesheet" href="../Public/Styles/cartstyle.css">
+  <link rel="icon" href="Favicon/favicon.ico">
+</head>
+<body>
+  <h1>รถเข็นของคุณ</h1>
+
+  <!-- แสดงจำนวนสินค้าที่อยู่ในตะกร้า -->
+  <p>จำนวนสินค้าในตะกร้า: <span id="cart-count">0</span></p>
+
+  <!-- รายการสินค้าที่อยู่ในตะกร้า -->
+  <ul id="cart-items">
+    <!-- สินค้าจะแสดงที่นี่ -->
+  </ul>
+
+  <!-- แสดงยอดรวมของสินค้าที่ในตะกร้า -->
+  <p>รวมทั้งหมด: $<span id="total-price">0.00</span></p>
+
+  <!-- ปุ่มไปยังหน้าหลัก -->
+  <a href="shop.html" id="continue-shopping">กลับไปเลือกสินค้าต่อ</a>
+  <a href="Checkout.html">ชำระเงิน</a>
+
+  <script src="../src/cartscript.js"></script>
+</body>
+</html>

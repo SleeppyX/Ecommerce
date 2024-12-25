@@ -1,4 +1,4 @@
-1. Install `npm package` following the requirments.
+1. Install `npm package` following the requirements.
 
 2. Create .env in `Ecom` Folder:
   ```
